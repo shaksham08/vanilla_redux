@@ -3,10 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redux</title>
+    <title>Todo App</title>
+    <style>
+      #todoList {
+        margin-top: 20px;
+      }
+      .todoItem {
+        margin-bottom: 5px;
+      }
+      .removeButton {
+        margin-left: 10px;
+      }
+    </style>
   </head>
   <body>
-    <!-- Todo html code -->
-    <input />
+    <div>
+      <input type="text" id="todoInput" placeholder="Enter todo text..." />
+      <button onclick="addTodo()">Add Todo</button>
+    </div>
+
+    <div id="todoList"></div>
+
+    <button onclick="clearAllTodos()">Clear All Todos</button>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
